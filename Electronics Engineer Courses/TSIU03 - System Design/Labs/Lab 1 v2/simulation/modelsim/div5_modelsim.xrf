@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, X:/TSIU03/Lab1_2/div5.vhd
+source_file = 1, X:/TSIU03/Lab1_2/db/div5.cbx.xml
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = div5
+instance = comp, \y~output\, y~output, div5, 1
+instance = comp, \SW3~input\, SW3~input, div5, 1
+instance = comp, \SW2~input\, SW2~input, div5, 1
+instance = comp, \SW1~input\, SW1~input, div5, 1
+instance = comp, \SW0~input\, SW0~input, div5, 1
+instance = comp, \y~0\, y~0, div5, 1

@@ -1,0 +1,61 @@
+vsim -vopt work.tb_top
+# vsim -vopt work.tb_top 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_top(sim)#1
+add wave -position insertpoint  \
+sim:/tb_top/clk \
+sim:/tb_top/rstn \
+sim:/tb_top/sram_addr \
+sim:/tb_top/sram_data \
+sim:/tb_top/sram_we \
+sim:/tb_top/sram_oe \
+sim:/tb_top/vga_r \
+sim:/tb_top/vga_g \
+sim:/tb_top/vga_b \
+sim:/tb_top/hsync \
+sim:/tb_top/vsync \
+sim:/tb_top/vga_clk \
+sim:/tb_top/blank3 \
+sim:/tb_top/blank4 \
+sim:/tb_top/pixcode3 \
+sim:/tb_top/pixcode4 \
+sim:/tb_top/hsync_del \
+sim:/tb_top/line_cnt \
+sim:/tb_top/done_h \
+sim:/tb_top/done_v \
+sim:/tb_top/done_c \
+sim:/tb_top/vga_sync \
+sim:/tb_top/sram_ub \
+sim:/tb_top/sram_lb \
+sim:/tb_top/sram_ce
+run -a
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /tb_top
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /tb_top/iSRAM
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /tb_top/iSRAM
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /tb_top/iSRAM
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /tb_top/DUT/b2v_inst1
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 1  Instance: /tb_top/iSRAM
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 1  Instance: /tb_top/iSRAM
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 1  Instance: /tb_top/iSRAM
+# ** Note: VGA_clk timing: OK
+#    Time: 1040 ns  Iteration: 4  Instance: /tb_top
+# ** Note: Horizontal timing: OK
+#    Time: 64 us  Iteration: 5  Instance: /tb_top
+# ** Note: Colour check: OK
+#    Time: 16790180 ns  Iteration: 4  Instance: /tb_top
+# ** Note: Vertical timing: OK
+#    Time: 33524240 ns  Iteration: 0  Instance: /tb_top
+# Causality operation skipped due to absense of debug database file

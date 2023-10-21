@@ -1,0 +1,146 @@
+# Compile of Lab2_KB.vhd was successful.
+vsim work.lab2_kb
+# vsim work.lab2_kb 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.lab2_kb(rtl)#1
+add wave sim:/lab2_kb/*
+do K:/TSIU03/Labs/Lab2_KB/Stimuli.do
+# Key1: NOK, result = "0000110". 
+# Key2: NOK, result = "0000110". 
+# Key3: NOK, result = "0000110". 
+# Key4: NOK, result = "0000110". 
+# Key5: NOK, result = "0000110". 
+# Key6: NOK, result = "0000110". 
+# Key7: NOK, result = "0000110". 
+# Key8: NOK, result = "0000110". 
+# Key9: NOK, result = "0000110". 
+# Key0: NOK, result = "0000110". 
+# Other: OK. 
+# 0 ns
+# 23100 us
+# Compile of Lab2_KB.vhd was successful.
+do K:/TSIU03/Labs/Lab2_KB/Stimuli.do
+# Key1: NOK, result = "0000110". 
+# Key2: NOK, result = "0000110". 
+# Key3: NOK, result = "0000110". 
+# Key4: NOK, result = "0000110". 
+# Key5: NOK, result = "0000110". 
+# Key6: NOK, result = "0000110". 
+# Key7: NOK, result = "0000110". 
+# Key8: NOK, result = "0000110". 
+# Key9: NOK, result = "0000110". 
+# Key0: NOK, result = "0000110". 
+# Other: OK. 
+# 0 ns
+# 46200 us
+clear
+# invalid command name "clear"
+clr
+# invalid command name "clr"
+# Compile of Lab2_KB.vhd was successful.
+# Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (X:/TSIU03/Lab2/MSim/Sim_KB.mpf).  File can not be renamed.
+vsim work.lab2_kb
+# vsim work.lab2_kb 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.lab2_kb(rtl)#1
+add wave sim:/lab2_kb/*
+do K:/TSIU03/Labs/Lab2_KB/Stimuli.do
+# Key1: OK. 
+# Key2: OK. 
+# Key3: OK. 
+# Key4: OK. 
+# Key5: OK. 
+# Key6: OK. 
+# Key7: OK. 
+# Key8: OK. 
+# Key9: OK. 
+# Key0: OK. 
+# Other: OK. 
+# 0 ns
+# 23100 us
+vcom ../Lab2 KB.vhd; restart -f; do K:/.../Stimuli.do
+# Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+# ** Error: (vcom-7) Failed to open design unit file "../Lab2" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)
+# C:/Program Files/MentorGraphics/win64/vcom failed.
+# Compile of Lab2_KB.vhd failed with 1 errors.
+# Compile of Lab2_KB.vhd failed with 1 errors.
+# Compile of Lab2_KB.vhd failed with 1 errors.
+# Compile of Lab2_KB.vhd failed with 1 errors.
+# Compile of Lab2_KB.vhd failed with 1 errors.
+# Compile of Lab2_KB_TB.vhd was successful.
+# 2 compiles, 1 failed with 1 error. 
+# Compile of Lab2_KB.vhd was successful.
+# Compile of Lab2_KB_TB.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim work.lab2_kb_tb
+# vsim work.lab2_kb_tb 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.lab2_kb_tb(sim)#1
+add wave -r /*
+vsim work.lab2_kb_tb
+# vsim work.lab2_kb_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.lab2_kb_tb(sim)#1
+add wave sim:/lab2 kb/*
+# (vish-4014) No objects found matching '/lab2'.
+# (vish-4014) No objects found matching 'kb/*'.
+add wave sim:/lab2_kb_tb/*
+run 2ms
+vsim work.lab2_kb_tb
+# vsim work.lab2_kb_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.lab2_kb_tb(sim)#1
+vsim work.lab2_kb_tb
+# vsim work.lab2_kb_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.lab2_kb_tb(sim)#1
+add wave sim:/lab2 kb/*
+# (vish-4014) No objects found matching '/lab2'.
+# (vish-4014) No objects found matching 'kb/*'.
+add wave sim:/lab2_kb_tb/*
+run 2ms
+# Compile of Lab2_KB.vhd was successful.
+# Compile of Lab2_KB_TB.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+vsim work.lab2_kb_tb
+# vsim work.lab2_kb_tb 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.lab2_kb_tb(sim)#1
+add wave sim:/lab2_kb_tb/*
+run 2ms
+# ** Error: HEX0 failed
+#    Time: 1100 us  Iteration: 0  Instance: /lab2_kb_tb
+# Compile of Lab2_KB.vhd was successful.
+restart -f; run 2ms
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.lab2_kb_tb(sim)#1

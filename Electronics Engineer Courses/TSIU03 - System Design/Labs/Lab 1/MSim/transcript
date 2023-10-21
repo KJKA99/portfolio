@@ -1,0 +1,40 @@
+# Error: Acs sdne.
+# 2
+#        Unable to replace existing ini file (X:/TSIU03/Lab1_2/MSim/div5.mpf).  File can not be renamed.
+# Compile of div5.vhd was successful.
+vsim work.div5
+# vsim work.div5 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.div5(rtl)#1
+vsim work.div5
+# vsim work.div5 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.div5(rtl)#1
+ force -freeze sim:/div5/SW0 0 0ns, 1 10ns -r 20ns
+force -freeze sim:/div5/SW1 0 0ns, 1 20ns -r 40ns
+force -freeze sim:/div5/SW2 0 0ns, 1 40ns -r 80ns
+force -freeze sim:/div5/SW3 0 0ns, 1 80ns -r 160ns
+run 160ns
+add wave -position end  sim:/div5/SW0
+add wave -position end  sim:/div5/SW1
+add wave -position end  sim:/div5/SW2
+add wave -position end  sim:/div5/SW3
+add wave -position end  sim:/div5/y
+restart -f
+add wave -position end  sim:/div5/SW0
+add wave -position end  sim:/div5/SW1
+add wave -position end  sim:/div5/SW2
+add wave -position end  sim:/div5/SW3
+run 160ns
+restart -f
+force -freeze sim:/div5/SW0 0 0ns, 1 10ns -r 20ns
+force -freeze sim:/div5/SW1 0 0ns, 1 20ns -r 40ns
+force -freeze sim:/div5/SW2 0 0ns, 1 40ns -r 80ns
+ force -freeze sim:/div5/SW3 0 0ns, 1 80ns -r 160ns
+run 160ns

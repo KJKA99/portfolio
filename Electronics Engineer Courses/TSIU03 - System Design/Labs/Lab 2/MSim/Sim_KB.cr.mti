@@ -1,0 +1,17 @@
+X:/TSIU03/Lab2/Lab2_KB.vhd {1 {vcom -work work -2002 -explicit -vopt X:/TSIU03/Lab2/Lab2_KB.vhd
+Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Lab2_KB
+-- Compiling architecture rtl of Lab2_KB
+
+} {} {}} X:/TSIU03/Lab2/MSim/Lab2_KB_TB.vhd {1 {vcom -work work -2002 -explicit -vopt X:/TSIU03/Lab2/MSim/Lab2_KB_TB.vhd
+Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Lab2_KB_TB
+-- Compiling architecture sim of Lab2_KB_TB
+
+} {} {}}

@@ -1,0 +1,14 @@
+|my_xor_schematic
+y <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+a => my_xor:inst.a
+b => my_xor:inst.b
+
+
+|my_xor_schematic|my_xor:inst
+a => y.IN0
+a => y.IN0
+b => y.IN1
+b => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+

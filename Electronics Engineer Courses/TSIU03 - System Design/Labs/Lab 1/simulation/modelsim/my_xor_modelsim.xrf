@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, X:/TSIU03/Lab1/my_xor.vhd
+source_file = 1, X:/TSIU03/Lab1/output_files/Chain1.cdf
+source_file = 1, X:/TSIU03/Lab1/output_files/Chain2.cdf
+source_file = 1, X:/TSIU03/Lab1/my_xor_schematic.bdf
+source_file = 1, X:/TSIU03/Lab1/db/my_xor.cbx.xml
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = my_xor_schematic
+instance = comp, \y~output\, y~output, my_xor_schematic, 1
+instance = comp, \b~input\, b~input, my_xor_schematic, 1
+instance = comp, \a~input\, a~input, my_xor_schematic, 1
+instance = comp, \inst|y~0\, inst|y~0, my_xor_schematic, 1

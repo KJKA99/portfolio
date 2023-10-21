@@ -1,0 +1,20 @@
+|div5
+SW0 => y.IN0
+SW0 => y.IN0
+SW0 => y.IN0
+SW0 => y.IN0
+SW1 => y.IN1
+SW1 => y.IN1
+SW1 => y.IN1
+SW1 => y.IN1
+SW2 => y.IN1
+SW2 => y.IN1
+SW2 => y.IN1
+SW2 => y.IN1
+SW3 => y.IN1
+SW3 => y.IN1
+SW3 => y.IN1
+SW3 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,106 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 88 256 240)
+	(text "my_fancy_application" (rect 21 0 127 11)(font "Arial" ))
+	(text "inst" (rect 24 136 41 147)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 11)(font "Arial" ))
+		(text "clk" (rect 21 27 35 38)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "rstn" (rect 0 0 18 11)(font "Arial" ))
+		(text "rstn" (rect 21 43 39 54)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "SW[5..7]" (rect 0 0 42 11)(font "Arial" ))
+		(text "SW[5..7]" (rect 21 75 63 86)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 192 32)
+		(input)
+		(text "lrsel" (rect -16 0 5 11)(font "Arial" ))
+		(text "lrsel" (rect 147 24 168 35)(font "Arial" ))
+		(line (pt 176 32)(pt 192 32))
+	)
+	(port
+		(pt 192 48)
+		(input)
+		(text "LADC[15..0]" (rect -16 0 44 11)(font "Arial" ))
+		(text "LADC[15..0]" (rect 112 40 172 51)(font "Arial" ))
+		(line (pt 176 48)(pt 192 48)(line_width 3))
+	)
+	(port
+		(pt 192 64)
+		(input)
+		(text "RADC[15..0]" (rect -16 0 46 11)(font "Arial" ))
+		(text "RADC[15..0]" (rect 112 56 174 67)(font "Arial" ))
+		(line (pt 176 64)(pt 192 64)(line_width 3))
+	)
+	(port
+		(pt 192 80)
+		(input)
+		(text "ADC_en" (rect 139 72 181 83)(font "Arial" ))
+		(text "ADC_en" (rect 128 72 170 83)(font "Arial" ))
+		(line (pt 192 80)(pt 176 80))
+	)
+	(port
+		(pt 0 96)
+		(output)
+		(text "LEDR[0..17]" (rect 0 0 60 11)(font "Arial" ))
+		(text "LEDR[0..17]" (rect 24 88 84 99)(font "Arial" ))
+		(line (pt 16 96)(pt 0 96)(line_width 3))
+	)
+	(port
+		(pt 192 96)
+		(output)
+		(text "LDAC[15..0]" (rect -16 0 44 11)(font "Arial" ))
+		(text "LDAC[15..0]" (rect 112 88 172 99)(font "Arial" ))
+		(line (pt 192 96)(pt 176 96)(line_width 3))
+	)
+	(port
+		(pt 192 112)
+		(output)
+		(text "RDAC[15..0]" (rect -16 0 46 11)(font "Arial" ))
+		(text "RDAC[15..0]" (rect 112 104 174 115)(font "Arial" ))
+		(line (pt 192 112)(pt 176 112)(line_width 3))
+	)
+	(port
+		(pt 192 128)
+		(output)
+		(text "DAC_en" (rect 139 120 181 131)(font "Arial" ))
+		(text "DAC_en" (rect 128 120 170 131)(font "Arial" ))
+		(line (pt 192 128)(pt 176 128))
+	)
+	(drawing
+		(rectangle (rect 16 16 176 136))
+	)
+)

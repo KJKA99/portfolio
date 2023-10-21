@@ -1,0 +1,47 @@
+m255
+K3
+13
+cModel Technology
+dC:\Program Files\MentorGraphics\examples
+T_opt
+VHm?jnn>F8[[DzQamOB<z:0
+04 6 3 work my_xor rtl 1
+=2-b00cd16f2ba1-64f09a83-196-2a14
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+OL;O;10.1b;51
+Emy_xor
+Z0 w1693489698
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 dX:\TSIU03\Lab1\MSim
+Z4 8X:/TSIU03/Lab1/my_xor.vhd
+Z5 FX:/TSIU03/Lab1/my_xor.vhd
+l0
+L4
+VaGanh:ek:cmQlIMXA8YVz0
+Z6 OL;C;10.1b;51
+32
+Z7 !s108 1693489763.076000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|X:/TSIU03/Lab1/my_xor.vhd|
+Z9 !s107 X:/TSIU03/Lab1/my_xor.vhd|
+Z10 o-work work -2002 -explicit
+Z11 tExplicit 1
+!s100 OeClYN=N;Y83FW57>Ymae0
+!i10b 1
+Artl
+R1
+R2
+DEx4 work 6 my_xor 0 22 aGanh:ek:cmQlIMXA8YVz0
+l10
+L9
+Vf8MCkL0L^NAjhMj@D;0n70
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!s100 No7mgRF^RlX47VnR_8nOU1
+!i10b 1

@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Sound">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Sound|my_fancy_application:inst1|PSAC:psac_inst|altsyncram:Mux1_rtl_0" CBX_FILE_NAME="altsyncram_37v.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Sound|my_fancy_application:inst1|PSAC:psac_inst|lpm_mult:Mult0" CBX_FILE_NAME="mult_lbt.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Sound|my_fancy_application:inst1|lpm_mult:Mult0" CBX_FILE_NAME="mult_36t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Sound|my_fancy_application:inst1|lpm_mult:Mult1" CBX_FILE_NAME="mult_36t.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

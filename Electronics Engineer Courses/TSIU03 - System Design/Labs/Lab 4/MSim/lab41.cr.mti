@@ -1,0 +1,47 @@
+X:/TSIU03/Lab4/mux.vhd {1 {vcom -work work -2002 -explicit -vopt X:/tsiu03/Lab4/mux.vhd
+Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity mux
+-- Compiling architecture rtl of mux
+
+} {} {}} X:/TSIU03/Lab4/MSim/TB_Audio.vhd {1 {vcom -work work -2002 -explicit -vopt X:/tsiu03/Lab4/MSim/TB_Audio.vhd
+Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Compiling entity TB_Audio
+-- Compiling architecture sim of TB_Audio
+
+} {} {}} X:/TSIU03/Lab4/channel_mod.vhd {1 {vcom -work work -2002 -explicit -vopt X:/tsiu03/Lab4/channel_mod.vhd
+Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity channel_mod
+-- Compiling architecture rtl of channel_mod
+
+} {} {}} X:/TSIU03/Lab4/SndDriver.vhd {1 {vcom -work work -2002 -explicit -vopt X:/tsiu03/Lab4/SndDriver.vhd
+Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity SndDriver
+-- Compiling architecture bdf_type of SndDriver
+
+} {} {}} X:/TSIU03/Lab4/ctrl.vhd {1 {vcom -work work -2002 -explicit -vopt X:/tsiu03/Lab4/ctrl.vhd
+Model Technology ModelSim SE-64 vcom 10.1b Compiler 2012.04 Apr 26 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ctrl
+-- Compiling architecture rtl of ctrl
+
+} {} {}}

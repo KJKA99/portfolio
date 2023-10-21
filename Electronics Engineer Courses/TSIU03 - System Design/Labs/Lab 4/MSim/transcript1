@@ -1,0 +1,47 @@
+# Compile of SndDriver.vhd was successful.
+# Compile of TB_Audio.vhd was successful.
+# Compile of channel_mod.vhd was successful.
+# Compile of ctrl.vhd was successful.
+# Compile of mux.vhd was successful.
+# 5 compiles, 0 failed with no errors. 
+# Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (X:/TSIU03/Lab4/MSim/lab4.mpf).  File can not be renamed.
+vsim -voptargs=+acc work.tb_audio
+# vsim -voptargs=+acc work.tb_audio 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.tb_audio(sim)#1
+# Loading work.snddriver(bdf_type)#1
+# Loading work.mux(rtl)#1
+# Loading work.ctrl(rtl)#1
+# Loading work.channel_mod(rtl)#1
+do wave.do
+run -a
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /tb_audio/DUT/b2v_inst_ctrl
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /tb_audio/DUT/b2v_inst_ctrl
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /tb_audio/DUT/b2v_inst_ctrl
+# ** Note: mclk: OK (80 ns)
+#    Time: 1080 ns  Iteration: 2  Instance: /tb_audio
+# ** Note: bclk period: OK (320 ns)
+#    Time: 1480 ns  Iteration: 2  Instance: /tb_audio
+# ** Note: adclrc period: OK (20480 ns)
+#    Time: 30760 ns  Iteration: 2  Instance: /tb_audio
+# ** Note: mclk expected values: OK ('1')
+#    Time: 51241 ns  Iteration: 0  Instance: /tb_audio
+# ** Note: bclk expected values: OK ('0')
+#    Time: 51241 ns  Iteration: 0  Instance: /tb_audio
+# ** Note: ADC_en period: OK (10240 ns)
+#    Time: 61500 ns  Iteration: 0  Instance: /tb_audio
+# ** Note: ADC path: OK. 95 samples passed.
+#    Time: 1 ms  Iteration: 0  Instance: /tb_audio
+# ** Note: DAC path: OK. 95 samples passed.
+#    Time: 1 ms  Iteration: 0  Instance: /tb_audio
+# ** Note: adclrc = daclrc /= lrsel: OK
+#    Time: 1000001 ns  Iteration: 0  Instance: /tb_audio
