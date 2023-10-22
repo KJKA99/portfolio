@@ -1,0 +1,326 @@
+inputCurrent=0
+inputs: Lock=0, Fan=0, AC=0, Desired=14.500000, Measured=0.000000, Humidity=0
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=0, Humidity2H_n=1, Humidity2L_n=0
+inputCurrent=1
+inputs: Lock=1, Fan=0, AC=0, Desired=14.500000, Measured=0.000000, Humidity=0
+outputs: Green=0, Red=1, Fan=3, Cooler=0, Heater=0, Humidity2H_n=1, Humidity2L_n=0
+inputCurrent=15
+inputs: Lock=1, Fan=7, AC=0, Desired=14.500000, Measured=0.000000, Humidity=0
+outputs: Green=0, Red=1, Fan=0, Cooler=0, Heater=0, Humidity2H_n=1, Humidity2L_n=0
+inputCurrent=7
+inputs: Lock=1, Fan=3, AC=0, Desired=14.500000, Measured=0.000000, Humidity=0
+outputs: Green=0, Red=1, Fan=1, Cooler=0, Heater=0, Humidity2H_n=1, Humidity2L_n=0
+inputCurrent=10
+inputs: Lock=0, Fan=5, AC=0, Desired=14.500000, Measured=0.000000, Humidity=0
+outputs: Green=1, Red=0, Fan=2, Cooler=0, Heater=0, Humidity2H_n=1, Humidity2L_n=0
+inputCurrent=0
+inputs: Lock=0, Fan=0, AC=0, Desired=14.500000, Measured=0.000000, Humidity=0
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=0, Humidity2H_n=1, Humidity2L_n=0
+inputCurrent=0
+inputs: Lock=0, Fan=0, AC=0, Desired=14.500000, Measured=0.000000, Humidity=0
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=0, Humidity2H_n=1, Humidity2L_n=0
+inputCurrent=16
+inputs: Lock=0, Fan=0, AC=1, Desired=14.500000, Measured=0.000000, Humidity=0
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=1, Humidity2H_n=1, Humidity2L_n=0
+inputCurrent=32
+inputs: Lock=0, Fan=0, AC=0, Desired=15.000000, Measured=0.000000, Humidity=0
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=0, Humidity2H_n=1, Humidity2L_n=0
+inputCurrent=64
+inputs: Lock=0, Fan=0, AC=0, Desired=15.500000, Measured=0.000000, Humidity=0
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=0, Humidity2H_n=1, Humidity2L_n=0
+inputCurrent=416
+inputs: Lock=0, Fan=0, AC=0, Desired=21.000000, Measured=0.000000, Humidity=0
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=0, Humidity2H_n=1, Humidity2L_n=0
+inputCurrent=640
+inputs: Lock=0, Fan=0, AC=0, Desired=24.500000, Measured=0.000000, Humidity=0
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=0, Humidity2H_n=1, Humidity2L_n=0
+inputCurrent=672
+inputs: Lock=0, Fan=0, AC=0, Desired=25.000000, Measured=0.000000, Humidity=0
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=0, Humidity2H_n=1, Humidity2L_n=0
+inputCurrent=0
+inputs: Lock=0, Fan=0, AC=0, Desired=14.500000, Measured=0.000000, Humidity=0
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=0, Humidity2H_n=1, Humidity2L_n=0
+inputCurrent=1024
+inputs: Lock=0, Fan=0, AC=0, Desired=14.500000, Measured=0.200000, Humidity=0
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=0, Humidity2H_n=1, Humidity2L_n=0
+inputCurrent=158720
+inputs: Lock=0, Fan=0, AC=0, Desired=14.500000, Measured=19.600000, Humidity=0
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=0, Humidity2H_n=1, Humidity2L_n=0
+inputCurrent=180224
+inputs: Lock=0, Fan=0, AC=0, Desired=14.500000, Measured=22.000000, Humidity=0
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=0, Humidity2H_n=1, Humidity2L_n=0
+inputCurrent=245760
+inputs: Lock=0, Fan=0, AC=0, Desired=14.500000, Measured=30.000000, Humidity=0
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=0, Humidity2H_n=1, Humidity2L_n=0
+inputCurrent=253952
+inputs: Lock=0, Fan=0, AC=0, Desired=14.500000, Measured=-1.000000, Humidity=0
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=0, Humidity2H_n=1, Humidity2L_n=0
+inputCurrent=261120
+inputs: Lock=0, Fan=0, AC=0, Desired=14.500000, Measured=31.000000, Humidity=0
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=0, Humidity2H_n=1, Humidity2L_n=0
+inputCurrent=0
+inputs: Lock=0, Fan=0, AC=0, Desired=14.500000, Measured=0.000000, Humidity=0
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=0, Humidity2H_n=1, Humidity2L_n=0
+inputCurrent=262144
+inputs: Lock=0, Fan=0, AC=0, Desired=14.500000, Measured=0.000000, Humidity=4
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=0, Humidity2H_n=1, Humidity2L_n=0
+inputCurrent=524288
+inputs: Lock=0, Fan=0, AC=0, Desired=14.500000, Measured=0.000000, Humidity=8
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=0, Humidity2H_n=1, Humidity2L_n=0
+inputCurrent=786432
+inputs: Lock=0, Fan=0, AC=0, Desired=14.500000, Measured=0.000000, Humidity=11
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=0, Humidity2H_n=1, Humidity2L_n=0
+inputCurrent=1048576
+inputs: Lock=0, Fan=0, AC=0, Desired=14.500000, Measured=0.000000, Humidity=14
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=0, Humidity2H_n=1, Humidity2L_n=0
+inputCurrent=1310720
+inputs: Lock=0, Fan=0, AC=0, Desired=14.500000, Measured=0.000000, Humidity=17
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=0, Humidity2H_n=1, Humidity2L_n=0
+inputCurrent=3670016
+inputs: Lock=0, Fan=0, AC=0, Desired=14.500000, Measured=0.000000, Humidity=44
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=0, Humidity2H_n=1, Humidity2L_n=1
+inputCurrent=6815744
+inputs: Lock=0, Fan=0, AC=0, Desired=14.500000, Measured=0.000000, Humidity=80
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=0, Humidity2H_n=0, Humidity2L_n=1
+inputCurrent=7077888
+inputs: Lock=0, Fan=0, AC=0, Desired=14.500000, Measured=0.000000, Humidity=83
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=0, Humidity2H_n=0, Humidity2L_n=1
+inputCurrent=7340032
+inputs: Lock=0, Fan=0, AC=0, Desired=14.500000, Measured=0.000000, Humidity=87
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=0, Humidity2H_n=0, Humidity2L_n=1
+inputCurrent=7602176
+inputs: Lock=0, Fan=0, AC=0, Desired=14.500000, Measured=0.000000, Humidity=91
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=0, Humidity2H_n=0, Humidity2L_n=1
+inputCurrent=7864320
+inputs: Lock=0, Fan=0, AC=0, Desired=14.500000, Measured=0.000000, Humidity=95
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=0, Humidity2H_n=0, Humidity2L_n=1
+inputCurrent=8126464
+inputs: Lock=0, Fan=0, AC=0, Desired=14.500000, Measured=0.000000, Humidity=100
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=0, Humidity2H_n=0, Humidity2L_n=1
+inputCurrent=172464
+inputs: Lock=0, Fan=0, AC=1, Desired=21.000000, Measured=21.000000, Humidity=0
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=0, Humidity2H_n=1, Humidity2L_n=0
+inputCurrent=159152
+inputs: Lock=0, Fan=0, AC=1, Desired=21.000000, Measured=19.600000, Humidity=0
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=1, Humidity2H_n=1, Humidity2L_n=0
+inputCurrent=180656
+inputs: Lock=0, Fan=0, AC=1, Desired=21.000000, Measured=22.000000, Humidity=0
+outputs: Green=1, Red=0, Fan=3, Cooler=1, Heater=0, Humidity2H_n=1, Humidity2L_n=0
+inputCurrent=159152
+inputs: Lock=0, Fan=0, AC=1, Desired=21.000000, Measured=19.600000, Humidity=0
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=1, Humidity2H_n=1, Humidity2L_n=0
+inputCurrent=172464
+inputs: Lock=0, Fan=0, AC=1, Desired=21.000000, Measured=21.000000, Humidity=0
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=0, Humidity2H_n=1, Humidity2L_n=0
+inputCurrent=246192
+inputs: Lock=0, Fan=0, AC=1, Desired=21.000000, Measured=30.000000, Humidity=0
+outputs: Green=1, Red=0, Fan=3, Cooler=1, Heater=0, Humidity2H_n=1, Humidity2L_n=0
+inputCurrent=172464
+inputs: Lock=0, Fan=0, AC=1, Desired=21.000000, Measured=21.000000, Humidity=0
+outputs: Green=1, Red=0, Fan=3, Cooler=0, Heater=0, Humidity2H_n=1, Humidity2L_n=0
+Reached end of input file! sampleIndex=40
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+0 : Output Register = 67
+1 : Output Register = 67
+2 : Output Register = 64
+3 : Output Register = 65
+4 : Output Register = 66
+5 : Output Register = 67
+6 : Output Register = 67
+7 : Output Register = 67
+8 : Output Register = 67
+9 : Output Register = 67
+10 : Output Register = 67
+11 : Output Register = 67
+12 : Output Register = 67
+13 : Output Register = 67
+14 : Output Register = 67
+15 : Output Register = 67
+16 : Output Register = 67
+17 : Output Register = 67
+18 : Output Register = 67
+19 : Output Register = 67
+20 : Output Register = 67
+21 : Output Register = 67
+22 : Output Register = 67
+23 : Output Register = 67
+24 : Output Register = 67
+25 : Output Register = 67
+26 : Output Register = 195
+27 : Output Register = 131
+28 : Output Register = 131
+29 : Output Register = 131
+30 : Output Register = 131
+31 : Output Register = 131
+32 : Output Register = 131
+33 : Output Register = 67
+34 : Output Register = 67
+35 : Output Register = 67
+36 : Output Register = 67
+37 : Output Register = 67
+38 : Output Register = 67
+39 : Output Register = 67
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+0 : Output Register = 67
+1 : Output Register = 67
+2 : Output Register = 64
+3 : Output Register = 65
+4 : Output Register = 66
+5 : Output Register = 67
+6 : Output Register = 67
+7 : Output Register = 67
+8 : Output Register = 67
+9 : Output Register = 67
+10 : Output Register = 67
+11 : Output Register = 67
+12 : Output Register = 67
+13 : Output Register = 67
+14 : Output Register = 67
+15 : Output Register = 67
+16 : Output Register = 67
+17 : Output Register = 67
+18 : Output Register = 67
+19 : Output Register = 67
+20 : Output Register = 67
+21 : Output Register = 67
+22 : Output Register = 67
+23 : Output Register = 67
+24 : Output Register = 67
+25 : Output Register = 67
+26 : Output Register = 195
+27 : Output Register = 131
+28 : Output Register = 131
+29 : Output Register = 131
+30 : Output Register = 131
+31 : Output Register = 131
+32 : Output Register = 131
+33 : Output Register = 67
+34 : Output Register = 67
+35 : Output Register = 67
+36 : Output Register = 67
+37 : Output Register = 67
+38 : Output Register = 67
+39 : Output Register = 67
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+0 : Output Register = 77
+1 : Output Register = 78
+2 : Output Register = 66
+3 : Output Register = 70
+4 : Output Register = 73
+5 : Output Register = 77
+6 : Output Register = 77
+7 : Output Register = 77
+8 : Output Register = 77
+9 : Output Register = 77
+10 : Output Register = 77
+11 : Output Register = 77
+12 : Output Register = 77
+13 : Output Register = 77
+14 : Output Register = 77
+15 : Output Register = 77
+16 : Output Register = 77
+17 : Output Register = 77
+18 : Output Register = 77
+19 : Output Register = 77
+20 : Output Register = 77
+21 : Output Register = 77
+22 : Output Register = 77
+23 : Output Register = 77
+24 : Output Register = 77
+25 : Output Register = 77
+26 : Output Register = 205
+27 : Output Register = 141
+28 : Output Register = 141
+29 : Output Register = 141
+30 : Output Register = 141
+31 : Output Register = 141
+32 : Output Register = 141
+33 : Output Register = 77
+34 : Output Register = 77
+35 : Output Register = 77
+36 : Output Register = 77
+37 : Output Register = 77
+38 : Output Register = 77
+39 : Output Register = 77
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+0 : Output Register = 77
+1 : Output Register = 78
+2 : Output Register = 66
+3 : Output Register = 70
+4 : Output Register = 73
+5 : Output Register = 77
+6 : Output Register = 77
+7 : Output Register = 109
+8 : Output Register = 77
+9 : Output Register = 77
+10 : Output Register = 77
+11 : Output Register = 77
+12 : Output Register = 77
+13 : Output Register = 77
+14 : Output Register = 77
+15 : Output Register = 77
+16 : Output Register = 77
+17 : Output Register = 77
+18 : Output Register = 77
+19 : Output Register = 77
+20 : Output Register = 77
+21 : Output Register = 77
+22 : Output Register = 77
+23 : Output Register = 77
+24 : Output Register = 77
+25 : Output Register = 77
+26 : Output Register = 205
+27 : Output Register = 141
+28 : Output Register = 141
+29 : Output Register = 141
+30 : Output Register = 141
+31 : Output Register = 141
+32 : Output Register = 141
+33 : Output Register = 77
+34 : Output Register = 109
+35 : Output Register = 93
+36 : Output Register = 109
+37 : Output Register = 77
+38 : Output Register = 93
+39 : Output Register = 77
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+0 : Output Register = 77
+1 : Output Register = 78
+2 : Output Register = 66
+3 : Output Register = 70
+4 : Output Register = 73
+5 : Output Register = 77
+6 : Output Register = 77
+7 : Output Register = 109
+8 : Output Register = 77
+9 : Output Register = 77
+10 : Output Register = 77
+11 : Output Register = 77
+12 : Output Register = 77
+13 : Output Register = 77
+14 : Output Register = 77
+15 : Output Register = 77
+16 : Output Register = 77
+17 : Output Register = 77
+18 : Output Register = 77
+19 : Output Register = 77
+20 : Output Register = 77
+21 : Output Register = 77
+22 : Output Register = 77
+23 : Output Register = 77
+24 : Output Register = 77
+25 : Output Register = 77
+26 : Output Register = 205
+27 : Output Register = 141
+28 : Output Register = 141
+29 : Output Register = 141
+30 : Output Register = 141
+31 : Output Register = 141
+32 : Output Register = 141
+33 : Output Register = 77
+34 : Output Register = 109
+35 : Output Register = 93
+36 : Output Register = 109
+37 : Output Register = 77
+38 : Output Register = 93
+39 : Output Register = 77
