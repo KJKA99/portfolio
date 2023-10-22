@@ -1,0 +1,239 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity Lab2_KB is
+    port (
+        rstn, clk, PS2_CLK, PS2_DAT: in std_logic;         -- Input ports for reset, clock, and PS2 data and clock
+      --  HEX0, HEX6, HEX7: out std_logic_vector(6 downto 0); -- Output ports for seven-segment displays
+     -- LEDR: out std_logic_vector(15 downto 0);           -- Output port for LEDs
+		  MIDI_Notes: out std_logic_vector(11 downto 0);
+		--  settings: out std_logic_vector(3 downto 0);
+		  
+		  volume_level    : out STD_LOGIC_VECTOR(3 downto 0);
+        panning         : out STD_LOGIC_VECTOR(3 downto 0));
+end Lab2_KB;
+
+architecture rtl of Lab2_KB is
+  -- signals
+	signal PS2_bit,PS2_bit_en, PS2_CLK2,PS2_CLK2_old: std_logic;
+	signal shiftreg: std_logic_vector(9 downto 0) := (others=> '1');
+	signal PS2_byte : std_logic_vector(7 downto 0) := shiftreg(8 downto 1); 
+	signal PS2_byte_en : std_logic := not shiftreg(0);
+	signal scancode : std_logic_vector(9 downto 0) := (others=> '1');
+  --signal E0, F0 : std_logic;
+  --signal scancode_en : std_logic:='0';
+	signal E0,F0,scancode_en : std_logic:='0';
+	signal MIDI : std_logic_vector(11 downto 0) := (others=> '0');
+	signal set : std_logic_vector(3 downto 0) := (others=> '0');
+	signal last_set : std_logic_vector(3 downto 0) := (others=> '0');
+	signal current_volume : STD_LOGIC_VECTOR(3 downto 0) := "0000"; -- Initial volume level 0 percent
+   signal current_panning : STD_LOGIC_VECTOR(3 downto 0) := "1000"; -- Initial panning position
+	
+
+begin
+
+
+    -- Process 1: Synchronize PS2 input signals with the clock
+    p1: process(clk)
+    begin
+        if rising_edge(clk) then
+            PS2_bit <= PS2_DAT;                  -- Capture the current PS2 data bit
+            PS2_CLK2 <= PS2_CLK;                -- Capture the current PS2 clock
+            PS2_CLK2_old <= PS2_CLK2;          -- Store the old PS2 clock value
+        end if;
+    end process;
+
+    -- Determine if PS2 bit is enabled for processing
+    PS2_bit_en <= (NOT PS2_CLK2) AND PS2_CLK2_old;
+
+    -- Process 2: Handle the shift register
+    p2: process(clk, rstn, PS2_bit_en, PS2_byte_en, shiftreg)
+    begin
+        if rstn = '0' then
+            shiftreg(9 downto 0) <= (others => '1');  -- Reset the shift register on reset
+        elsif rising_edge(clk) then
+            if (PS2_bit_en = '1') then
+                for i in 0 to 8 loop
+                    shiftreg(i) <= shiftreg(i + 1);   -- Shift data in the shift register
+                end loop;
+                shiftreg(9) <= PS2_bit;               -- Store the new PS2 bit in the shift register
+            elsif (PS2_byte_en = '1') then
+                shiftreg(9 downto 0) <= (others => '1');  -- Reset the shift register for byte reception
+            end if;
+        end if;
+
+        -- Determine if a PS2 byte is being received
+        PS2_byte_en <= not shiftreg(0);
+        PS2_byte <= shiftreg(8 downto 1);         -- Capture the received PS2 byte
+    end process;
+
+    -- Process 3: Process PS2 byte and set flags accordingly
+    p3: process(clk, rstn, PS2_byte_en)
+    begin
+        if rising_edge(clk) then
+            if PS2_byte_en = '1' then
+                if PS2_byte = "11100000" then
+                    E0 <= '1';                    -- Set the E0 flag on specific PS2 byte
+                elsif PS2_byte = "11110000" then
+                    F0 <= '1';                    -- Set the F0 flag on specific PS2 byte
+                else
+                    scancode <= F0 & E0 & PS2_byte;  -- Combine flags and PS2 byte to form scan code
+						 E0 <= '0';
+						 F0 <= '0';
+                end if;
+            end if;
+        end if;
+    end process;
+
+	 
+	p4: process(clk, rstn, scancode)
+	begin
+
+	if rising_edge(clk) then
+		case scancode is
+			when "0000011010" => --Z key. C Note
+				MIDI(0) <= '1';
+			when "1000011010" => --Release of Z Key.
+				MIDI(0) <= '0';
+				
+			when "0000011011" => --S key C# Note
+				MIDI(1) <= '1';
+			when "1000011011" => --Release of S Key.
+				MIDI(1) <= '0';
+			  
+			when "0000100010" => --X key. D Note
+				MIDI(2) <= '1';
+			when "1000100010" => --Release of X Key.
+				MIDI(2) <= '0';
+			  
+			when "0000100011" => -- D key D#
+				MIDI(3) <= '1';
+			when "1000100011" => --Release of D Key.
+				MIDI(3) <= '0';
+		
+			when "0000100001" => -- C key E note
+				MIDI(4) <= '1';
+			when "1000100001" => --Release of C Key.
+				MIDI(4) <= '0';
+		
+			when "0000101010" => -- V key F note
+				MIDI(5) <= '1';
+			when "1000101010" => --Release of V Key.
+				MIDI(5) <= '0';
+			  
+			when "0000110100" => -- G key F# note
+				MIDI(6) <= '1';
+			when "1000110100" => --Release of G Key.
+				MIDI(6) <= '0';
+			
+			when "0000110010" => -- B key G note
+				MIDI(7) <= '1';
+			when "1000110010" => --Release of B Key.
+				MIDI(7) <= '0';
+			  
+			when "0000110011" => -- H key G# note
+				MIDI(8) <= '1';
+			when "1000110011" => --Release of H Key.
+				MIDI(8) <= '0';
+			  
+			when "0000110001" => -- N key A note
+				MIDI(9) <= '1';
+			when "1000110001" => --Release of N Key.
+				MIDI(9) <= '0';
+			  
+			when "0000111011" => -- J key A# note
+				MIDI(10) <= '1';
+			when "1000111011" => --Release of J Key.
+				MIDI(10) <= '0';
+			  
+			when "0000111010" => -- M key B note
+				MIDI(11) <= '1';
+			when "1000111010" => --Release of M Key.
+				MIDI(11) <= '0';
+			               
+			when others =>
+				--Do nothing;
+		end case;
+	end if;
+	end process;
+    -- Output the last byte of the scan code to LEDs
+  
+    
+	 MIDI_Notes <= MIDI;
+	
+	 
+	 p5 : process(clk, rstn, scancode)
+	 begin
+		if rising_edge(clk) then
+			case scancode is
+				when "0101110101" => --Up arrow
+					set(0) <= '1';
+				when "1101110101" =>
+					set(0) <= '0';
+				when "0101110010" => -- Down arrow
+					set(1) <= '1';
+				when "1101110010" => 
+					set(1) <= '0';
+				when "0101101011" =>--Left arrow
+					set(2) <= '1';
+				when "1101101011" =>
+					set(2) <= '0';
+				when "0101110100" => --Right arrow
+					set(3) <= '1';
+				when "1101110100" =>
+					set(3) <= '0';
+				when others =>
+	     --do nothing possibly dont need break codes, just break when others?
+			end case;
+		end if;
+	 end process;
+	 
+	 
+p6: process (clk, rstn, set)
+begin
+    if rising_edge(clk) then
+        if set(0) = '1' and last_set(0) = '0' then
+            -- Increase volume 
+            if current_volume < "1111" then
+                current_volume <= current_volume + 1;
+            end if;
+        elsif set(1) = '1' and last_set(1) = '0' then
+            -- Decrease volume 
+            if current_volume > "0000" then
+                current_volume <= current_volume - 1;
+            end if;
+        elsif set(2) = '1' and last_set(2) = '0' then
+            -- Adjust panning to the left
+            if current_panning < "1111" then
+                current_panning <= current_panning + 1; 
+            end if;
+        elsif set(3) = '1' and last_set(3) = '0' then
+            -- Adjust panning to the right 
+            if current_panning > "0001" then
+                current_panning <= current_panning - 1;
+            end if;
+        end if;
+        last_set <= set;
+    end if;
+end process;
+
+    -- Assign the current volume and panning values to the output ports
+    volume_level <= current_volume;
+    panning <= current_panning;
+
+	 
+	 
+
+	 --settings <= set;
+	 
+    -- Determine which digit to display on HEX0 based on the scan code
+   
+    
+    -- Display '1' on HEX7 and '0' on HEX6
+   -- HEX7 <= "1111001";
+   -- HEX6 <= "1000000";
+
+end architecture;
+
