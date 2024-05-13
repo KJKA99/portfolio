@@ -1,0 +1,51 @@
+V "GNAT Lib v10"
+M P W=b
+P ZX
+
+RN
+RV NO_IO
+RV SPARK_05
+
+U course_information_system_used_in_course%b  course_information_system_used_in_course.adb  90bf3c2e NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
+D a-tags.ads		20230707070819 491b781d ada.tags%s
+D a-textio.ads		20230707070819 aef4d56d ada.text_io%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D course_information_system_used_in_course.adb  20230830121551 3e4be943 course_information_system_used_in_course%b
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
+D system.ads		20230707070819 4635ec04 system%s
+D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20230707070819 1b7d22d2 system.wch_con%s
+G a e
+G c Z b b [course_information_system_used_in_course standard 4 11 none]
+X 1 ada.ads
+16K9*Ada 20e8 8|2r6 2r45
+X 6 a-textio.ads
+57K13*Text_IO 727e16 8|2w10 2r49
+264U14*New_Line 8|9s3 15s3 23s3 28s3 33s3 39s3 60s3 69s3 90s3 96s3 101s3
+508U14*Put_Line 8|7s3 8s3 11s3 12s3 13s3 14s3 17s3 18s3 19s3 20s3 21s3 22s3
+. 25s3 26s3 27s3 30s3 31s3 32s3 35s3 36s3 37s3 38s3 41s3 42s3 43s3 44s3 45s3
+. 46s3 47s3 48s3 49s3 50s3 51s3 52s3 53s3 54s3 55s3 56s3 57s3 58s3 59s3 62s3
+. 63s3 64s3 65s3 66s3 67s3 68s3 71s3 72s3 73s3 74s3 75s3 76s3 77s3 78s3 79s3
+. 80s3 81s3 82s3 83s3 84s3 85s3 86s3 87s3 88s3 89s3 92s3 93s3 94s3 95s3 98s3
+. 99s3 100s3 103s3
+X 8 course_information_system_used_in_course.adb
+4U11*Course_Information_System_Used_In_Course 4b11 104l5 104t45
+

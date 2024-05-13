@@ -1,0 +1,155 @@
+with Ada.Text_IO;                        use Ada.Text_IO;
+with Ada.Integer_Text_IO;                use Ada.Integer_Text_IO;
+with Ada.Float_Text_IO;                  use Ada.Float_Text_IO;
+with Ada.Numerics.Elementary_Functions;  use Ada.Numerics.Elementary_Functions;
+
+
+procedure Matematik is
+   
+   procedure Menu_Selection(Selection : out Integer) is
+      
+   begin
+      
+      New_Line;
+      Put("=== HUVUDMENY ===");
+      
+      New_Line;
+      Put("1. Beräkna hypotenusa");
+      New_Line;
+      Put("2. Beräkna triangelvinklar");
+      New_Line;
+      Put("3. Beräkna N-fakultet");
+      New_Line;
+      Put("4. Avsluta programmet");
+      New_Line;
+      
+      loop
+	 Put("Val: ");
+	 Get(Selection);
+	 exit when Selection <= 4 and Selection > 0;	 
+	 Put("Felaktigt val!");
+	 New_Line;
+	 Skip_Line;
+      end loop;
+
+   end Menu_Selection;
+-----------------------------------------------------------------------------   
+   function Calculate_Hypothenuse(A, B : in Float) return float is
+      
+   begin
+      
+      return (Sqrt((A**2) + (B**2)));
+      
+   end Calculate_Hypothenuse;
+   
+   
+   
+   procedure Hypothenuse_Program is
+      
+      A, B : Float;
+      
+   begin
+      Put("Mata in kateternas längder: ");
+      Get(A);
+      Get(B);
+      Put("Hypotenusan är ");
+      Put(Calculate_Hypothenuse(A, B), Fore => 0, Aft => 2, Exp => 0);
+   end Hypothenuse_Program; 
+-----------------------------------------------------------------------------   
+   
+   procedure Calculate_Angles(Hc, Sa: in Float ; Va, Vb, Vc : out Float) is
+      
+      Pi : Float;
+      
+   begin
+      
+      Pi := Ada.Numerics.Pi;
+      
+      Va := Arcsin(Sa/Hc) * (180.0)/Pi;
+      Vb := Arccos(Sa/Hc) * (180.0)/Pi;
+      Vc := 180.0 - Va - Vb;
+      
+   end Calculate_Angles;
+   
+   procedure Angle_Program is
+      
+      Hc, Sa, Va, Vb, Vc : Float;
+      
+   begin
+      
+      Put("Mata in hypotenusans längd: ");
+      Get(Hc);
+      Put("Mata in motstående kateters längd: ");
+      Get(Sa);
+      Put("Va: ");
+      Calculate_Angles(Hc, Sa, Va, Vb, Vc);
+      Put((Va), Fore => 0, Aft => 1, Exp => 0);
+      Put(" grader");
+      New_Line;
+      Put("Vb: ");
+      Put((Vb), Fore => 0, Aft => 1, Exp => 0);
+      Put(" grader");
+      New_Line;
+      Put("Vc: ");
+      Put((Vc), Fore => 0, Aft => 1, Exp => 0);
+      Put(" grader");
+      
+   end Angle_Program;
+-----------------------------------------------------------------------------   
+   function Calculate_Factorial(N : in out Integer) return Integer is
+      
+      Fact : Integer;
+      
+   begin
+      
+      Fact := 1;
+      
+      for I in 2..N loop
+	 Fact := Fact * i;
+      end loop;
+      
+      return Fact;
+      
+   end Calculate_Factorial;
+   
+   
+   procedure Factorial_Program is
+      
+      N : Integer;
+
+   begin
+      
+      Put("Mata in N: ");
+      Get(N);
+      Put(N, Width => 0);
+      Put("-fakultet = ");
+      Put(Calculate_Factorial(N), 1);
+      
+   end Factorial_program; 
+-----------------------------------------------------------------------------   
+   Selection : Integer;
+   
+begin
+   
+   Put("Välkommen till miniräknaren!");
+   
+   loop
+      
+      Menu_Selection(Selection);
+      if Selection = 1 then
+	 Hypothenuse_Program;
+	 Skip_Line;
+      elsif Selection = 2 then
+	 Angle_Program;
+	 Skip_Line;
+      elsif Selection = 3 then
+	 Factorial_program;
+	 Skip_Line;
+      elsif Selection = 4 then
+	 exit;
+      end if;
+      New_Line;
+   end loop;
+   Put("Ha en bra dag!");
+   
+end Matematik;

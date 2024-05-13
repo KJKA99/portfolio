@@ -1,0 +1,103 @@
+V "GNAT Lib v10"
+M P W=b
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV SPARK_05
+
+U falt%b		falt.adb		d1679fae NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20210408115627 76789da1 ada%s
+D a-except.ads		20210408115627 a7106115 ada.exceptions%s
+D a-flteio.ads		20210408115627 e18a47a0 ada.float_text_io%s
+D a-inteio.ads		20210408115627 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20210408115627 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210408115627 119b8fb3 ada.streams%s
+D a-tags.ads		20210408115627 491b781d ada.tags%s
+D a-textio.ads		20210408115627 aef4d56d ada.text_io%s
+D a-tiflio.ads		20210408115627 bf196650 ada.text_io.float_io%s
+D a-tiinio.ads		20210408115627 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20210408115627 0e9b276f ada.unchecked_conversion%s
+D falt.adb		20211117123311 685284c7 falt%b
+D interfac.ads		20210408115627 5ab55268 interfaces%s
+D i-cstrea.ads		20210408115627 e53d8b8e interfaces.c_streams%s
+D system.ads		20210408115627 4635ec04 system%s
+D s-crtl.ads		20210408115627 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210408115627 54135002 system.exception_table%s
+D s-ficobl.ads		20210408115627 078245e4 system.file_control_block%s
+D s-parame.ads		20210408115627 48ec542b system.parameters%s
+D s-secsta.ads		20210408115627 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20210408115627 a7318a92 system.soft_links%s
+D s-stache.ads		20210408115627 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210408115627 09bd3940 system.standard_library%s
+D s-stoele.ads		20210408115627 2dc34a04 system.storage_elements%s
+D s-traent.ads		20210408115627 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20210408115627 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20210408115627 1b7d22d2 system.wch_con%s
+G a e
+G c Z b b [falt standard 6 11 none]
+X 1 ada.ads
+16K9*Ada 20e8 12|1r6 1r38 2r6 2r38 3r6 3r38
+X 3 a-flteio.ads
+20K13*Float_Text_IO[9|46] 12|3w10 3r42
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[10|46] 12|2w10 2r42
+X 8 a-textio.ads
+57K13*Text_IO 727e16 12|1w10 1r42
+86I12*Field{integer}
+264U14*New_Line 12|120s4 125s4 128s4 133s4 136s4
+381U14*Get 12|81s16
+454U14*Get 12|78s13
+465U14*Put 12|30s13 60s13 61s13 95s10 119s4 121s4 123s4 127s4 129s4 131s4
+. 135s4 137s4 139s4
+X 9 a-tiflio.ads
+60U14*Get 12|107s10[3|20]
+82U14*Put 12|96s10[3|20]
+84i7 Fore{8|86I12} 12|96r22[3|20]
+85i7 Aft{8|86I12} 12|96r33[3|20]
+86i7 Exp{8|86I12} 12|96r43[3|20]
+X 10 a-tiinio.ads
+59U14*Get 12|46s13[4|18]
+80U14*Put 12|31s13[4|18]
+82i7 Width{8|86I12} 12|31r27[4|18]
+X 12 falt.adb
+6U11*Falt 6b11 142l5 142t9
+10A9 Ds1_type(float)<integer> 90r27 94r24 102r28 113r10
+14A9 FalseTrue_Type(string)<character> 18r43 59r27 77r27
+17A9 Boolean_Type(14A9)<boolean> 53r27 69r28 114r10
+21A9 Ds3_Type(integer)<character><integer> 24r27 28r16 29r19 39r28 43r16
+. 45r19 115r10
+24U14 Put 24b14 24>18 36l8 36t11 140s4
+24a18 Ds3{21A9} 31r17
+28i11 I{integer} 31r23
+29e14 J{character} 31r21
+39U14 Get 39b14 39<18 51l8 51t11 138s4
+39a18 Ds3{21A9} 46m17 46r17
+43i11 I{integer} 46r23
+45e14 J{character} 46r21
+53U14 Put 53b14 53>18 66l8 66t11 132s4
+53a18 Ds2{17A9} 61r17
+57b11 I{boolean} 61r21
+59e14 J{character} 61r24
+69U14 Get 69b14 69<18 88l8 88t11 130s4
+69a18 Ds2{17A9} 78m17 78r17
+71e7 C{character} 81m20
+75b11 I{boolean} 78r21 80r21
+77e14 J{character} 78r24 80r34
+90U14 Put 90b14 90>18 99l8 99t11 124s4
+90a18 Ds1{10A9} 96r14
+94i11 I{integer} 96r18
+102U14 Get 102b14 102<18 110l8 110t11 122s4
+102a18 Ds1{10A9} 106r24 107m14 107r14
+106i11 I{integer} 107r18
+113a4 Ds1{10A9} 122m8 124r8
+114a4 Ds2{17A9} 130m8 132r8
+115a4 Ds3{21A9} 138m8 140r8
+
